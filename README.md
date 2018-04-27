@@ -20,3 +20,13 @@ After the installation is complete, type git clone https://github.com/Usama167/2
 Navigate to the target directory through terminal where you have downloaded your git.
 Compile the code by typing gcc -o main main.c
 Execute the compiled program by typing ./main
+
+# Methodology:
+
+Process communication can be done with many ways such as using
+unnamed pipes, named pipes, message queue, and shared memory and
+etc. We selected named pipe as our methodology to implement two way
+process communication. Named pipes are further enhancement, they are
+also Known as FIFO (First In First out).In FIFO two processes share a same
+file for communication. Process A writes on the file and Process B read from
+the same file or vice versa. System call of mkfifo is used to make FIFO.
